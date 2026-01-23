@@ -1,94 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | Prajwal Maka</title>
-  <link rel="stylesheet" href="CSS/styles.css">
-  <style>
-    /* Additional blog styles */
-    .blog-section {
-      max-width: 900px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    .blog-card {
-      border: 1px solid #ddd;
-      padding: 20px;
-      margin: 18px 0;
-      border-radius: 8px;
-      transition: 0.3s;
-    }
-    .blog-card:hover {
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    }
-    .blog-card h2 {
-      margin: 0 0 8px;
-    }
-    .blog-meta {
-      color: #777;
-      font-size: 14px;
-      margin-bottom: 8px;
-    }
-    .read-more {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .read-more:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Blog | Prajwal Maka</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/pr.png" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,700" rel="stylesheet" />
+
+    <!-- Core CSS -->
+    <link href="CSS/styles.css" rel="stylesheet" />
+
+    <!-- Blog-specific styles -->
+    <style>
+        .blog-section {
+            max-width: 900px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+        }
+
+        .blog-card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 18px 0;
+            border-radius: 8px;
+            transition: 0.3s;
+            background: #fff;
+        }
+
+        .blog-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .blog-card h2 {
+            margin-bottom: 8px;
+        }
+
+        .blog-meta {
+            color: #777;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .read-more {
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-<body>
 
-  <!-- Include your existing Header -->
-  <header class="header">
-    <a href="index.html" class="logo">Portfolio</a>
-    <nav class="navbar">
-      <a href="index.html">Home</a>
-      <a href="blog.html" class="active">Blog</a>
-      <a href="contact.html">Contact</a>
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="index.html">Prajwal Maka</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <!-- Blog content -->
-  <section class="blog-section">
+    <!-- Blog Section -->
+    <section class="blog-section">
 
-    <div class="blog-card">
-      <h2>How I Built This Portfolio</h2>
-      <div class="blog-meta">Posted on Jan 22, 2026 • Web Development</div>
-      <p>
-        In this post, I walk through how I structured my portfolio using HTML, CSS & JavaScript —
-        including responsive layout, animations and deployment on GitHub Pages.
-      </p>
-      <a href="#" class="read-more">Read More →</a>
-    </div>
+        <div class="blog-card">
+            <h2>How I Built This Portfolio</h2>
+            <div class="blog-meta">Jan 22, 2026 • Web Development</div>
+            <p>
+                A breakdown of how I built my personal portfolio using HTML, CSS, JavaScript,
+                and deployed it using GitHub Pages.
+            </p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
 
-    <div class="blog-card">
-      <h2>Networking Basics You Should Know</h2>
-      <div class="blog-meta">Posted on Jan 10, 2026 • IT & Networking</div>
-      <p>
-        A beginner-friendly guide to VLANs, subnetting, and practical networking tools.
-      </p>
-      <a href="#" class="read-more">Read More →</a>
-    </div>
+        <div class="blog-card">
+            <h2>Networking Basics You Should Know</h2>
+            <div class="blog-meta">Jan 10, 2026 • Networking</div>
+            <p>
+                Beginner-friendly concepts like VLANs, subnetting, switches, and
+                how real networks are structured.
+            </p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
 
-    <div class="blog-card">
-      <h2>Starting with Ethical Hacking</h2>
-      <div class="blog-meta">Posted on Dec 25, 2025 • Cybersecurity</div>
-      <p>
-        Kali Linux, tools, tips and ethical hacking basics for beginners.
-      </p>
-      <a href="#" class="read-more">Read More →</a>
-    </div>
+        <div class="blog-card">
+            <h2>Starting with Ethical Hacking</h2>
+            <div class="blog-meta">Dec 25, 2025 • Cybersecurity</div>
+            <p>
+                My roadmap for learning Kali Linux, ethical hacking tools,
+                and cybersecurity fundamentals.
+            </p>
+            <a href="#" class="read-more">Read More →</a>
+        </div>
 
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2026 Prajwal Maka</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer py-4 bg-light">
+        <div class="container text-center">
+            <p class="mb-0">© 2026 Prajwal Maka</p>
+        </div>
+    </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
